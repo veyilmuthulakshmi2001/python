@@ -1,0 +1,5 @@
+word = input()
+if(word.isupper() or word.islower() or word.istitle()):
+    print("true")
+else:
+    print("false")          
