@@ -1,0 +1,4 @@
+web = input()
+res = web.split("www.")
+site = res[-1]
+print(site)
