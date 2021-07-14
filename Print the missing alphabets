@@ -1,0 +1,8 @@
+import string
+alp_inp = input().lower()
+alphabet = set(string.ascii_lowercase)
+missingletter = ''
+for letter in alphabet:
+    if letter not in alp_inp:
+        missingletter += letter
+print(''.join(sorted(missingletter)))
