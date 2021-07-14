@@ -1,0 +1,20 @@
+num = int(input())
+sum1 = 0
+for digit in str(num):
+    sum1 = sum1 + int(digit)
+n = num - 1
+check = 0
+while n < num and n > 0:
+    sum = 0
+    for digit in str(n):
+        sum = sum + int(digit)
+    if sum > sum1:
+        check = 1
+        op = n
+        break
+    else:
+        n = n - 1
+if check == 1:
+    print(op)
+else:
+    print(num)
