@@ -1,0 +1,24 @@
+int = input().split("#")
+n = int(inp[1])
+n1 = inp[0].split("-")
+inp_list = []
+for i in n1:
+    a = int(i)
+    inp_list.append(a)
+range_no = int(n1[-1])
+range_list = []
+for i in range(1,raange_no+1):
+    range_list.append(i)
+result = []
+for i in range_list:
+    x = "Push"
+    y = "Pop"
+    if i not in inp_list:
+        result.append(x)
+        result.append(y)
+    else:
+        result.append(x)
+string = str(result)
+replace_space = string.replace(" ","")
+end_result = replace_space.replace("'",'"')
+print(end_result)
