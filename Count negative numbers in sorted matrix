@@ -1,0 +1,12 @@
+string = input()
+s = string.split("#")
+n = []
+for i in range(len(s)):
+    a = s[i]
+    for j in a:
+        n.append(j)
+count = 0
+for i in range(len(n)):
+    if n[i] == '-':
+        count+=1
+print(count)
