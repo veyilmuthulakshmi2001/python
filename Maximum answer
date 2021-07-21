@@ -1,0 +1,12 @@
+X,Y = input().split()
+X = int(X)
+Y = int(Y)
+lst = list(map(int,input().split()))
+skip = 0
+answer = 0
+for i in range(0,X):
+    if lst[i]<=Y and skip<2:
+        answer += 1
+    else:
+        skip += 1
+print(answer)
