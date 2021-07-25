@@ -1,0 +1,11 @@
+from collections import Counter
+x = int(input())
+lst = tuple(map(int,input().split()))
+element = []
+count = Counter(lst)
+for i in count:
+    if count[i]==1:
+        element.append(i)
+element.sort()
+for j in element:
+    print(j, end=' ')
