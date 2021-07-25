@@ -1,0 +1,23 @@
+from collections import Counter
+s =int(input())
+p =[]
+m =[]
+l = ''
+c=1
+for i in range(s):
+    k = list(map(str,input().split(' ')))
+    for j in k:
+            if j.startswith('#'):
+                 p.append(j)
+                 p.sort()
+cnt=Counter(p)
+a = cnt.most_common() 
+a=str(a)  
+for i in a:
+    if c<=5:
+        if i.isalpha() or i.startswith('#'):
+            l+=i     
+        elif l!='':   
+            print(l) 
+            l=''    
+            c+=1
