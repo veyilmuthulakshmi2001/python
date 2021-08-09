@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+    count=int(input())
+    ls=tuple(map(int,input().split()))
+    odd=0
+    even=0
+    for ele in ls:
+        if ele%2==0:
+            even+=1
+        else:
+            odd+=1
+    if odd>even:
+        print(even)
+    else:
+        print(odd)
