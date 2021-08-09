@@ -1,0 +1,26 @@
+from datetime import *
+t=datetime.strptime(input().strip(), "%H:%M:%S")
+n=int(input())
+for i in range(n):
+    date=datetime.strptime(input().strip(), "%H:%M:%S")
+    if date==t:
+        print("now")
+    else:
+        diff=str(t-date)
+        diff=datetime.strptime(diff, "%H:%M:%S")
+        h,m,s=diff.hour,diff.minute,diff.second
+        if h>0:
+            if h==1:
+                print("1 hour ago")
+            else:
+                print(h,"hours ago")
+        elif m>0:
+            if m==1:
+                print("1 minute ago")
+            else:
+                print(m,"minutes ago")
+        elif s>0:
+            if s==1:
+                print("1 second ago")
+            else:
+                print(s,"seconds ago")
